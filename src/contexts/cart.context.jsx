@@ -66,7 +66,6 @@ const cartReducer = (state, action) => {
       return { ...state, ...payload };
     case CART_ACTION_TYPES.SET_IS_CART_OPEN:
       return { ...state, isCartOpen: payload };
-
     default:
       throw new Error(`Unhandled type ${type} in cartReducer`);
   }
